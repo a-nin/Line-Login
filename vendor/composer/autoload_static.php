@@ -36,6 +36,11 @@ class ComposerStaticInit411d069ad23b8d6f0198bd03a9487cb7
             'GuzzleHttp\\' => 11,
             'Goutte\\' => 7,
         ),
+        'A' => 
+        array (
+            'Aura\\Session\\_Config\\' => 21,
+            'Aura\\Session\\' => 13,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -78,6 +83,14 @@ class ComposerStaticInit411d069ad23b8d6f0198bd03a9487cb7
         'Goutte\\' => 
         array (
             0 => __DIR__ . '/..' . '/fabpot/goutte/Goutte',
+        ),
+        'Aura\\Session\\_Config\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/session/config',
+        ),
+        'Aura\\Session\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/session/src',
         ),
     );
 

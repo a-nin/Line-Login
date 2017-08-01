@@ -16,4 +16,6 @@ return array(
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
     'Goutte\\' => array($vendorDir . '/fabpot/goutte/Goutte'),
+    'Aura\\Session\\_Config\\' => array($vendorDir . '/aura/session/config'),
+    'Aura\\Session\\' => array($vendorDir . '/aura/session/src'),
 );
