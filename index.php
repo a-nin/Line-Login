@@ -38,8 +38,11 @@ foreach ($events as $event) {
     error_log('Non text message has come');
     continue;
   }
-  // オウム返し
-  $bot->replyText($event->getReplyToken(), $event->getText());
+  // LINE Loginページへのリンクを返信
+  replyMultiMessage($bot, $event->getReplyToken(),
+    new \KINE\LINEBot\MessageBuilder\TextMessageBuilder("以降の処理はホームページで可能です。以下のURLにアクセスしてください。"),
+    new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("http://" . $_SERVER["HTTP_HOST"] . "/line_login.php")
+  );
 }
 
 // テキストを返信。引数はLINEBot、返信先、テキスト
